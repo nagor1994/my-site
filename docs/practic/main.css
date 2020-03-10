@@ -1,10 +1,9 @@
 body{
    padding: 0;
-   margin: 0;
    font-family: 'Open Sans', sans-serif;
-   margin:0 auto;
+   margin: 0 auto;
   }
-div{
+*{
      box-sizing: border-box; /*Позволяет не деформировать колонку при изменении
      падингов. Проще говоря, когда вводим текст колонка не увеличивается */
 
@@ -34,6 +33,7 @@ header{
    font-weight: 700;
    margin-top: 50px;
    margin-bottom: 58px;
+   
 }
 
 .menu{
@@ -42,6 +42,8 @@ header{
    display: flex;
    justify-content: space-between;
    margin-left: 300px;
+
+ 
 }
 .menu li{
    display: flex;
@@ -61,15 +63,20 @@ header{
    color: #212121;
    transition: color 0.2s ease-in;
 }
-
-.heading-title{
-   width: 100%;
-   padding-top: 182px;
-   padding-bottom: 75px;
+.heading-fon{
    background: url(images/pexels-photo-356056.jpg) no-repeat;
    background-position: center;
    background-size: cover;
    background-color: #282828;
+   width: 100%;
+   padding-top: 182px;
+   padding-bottom: 75px;
+   text-align: center;
+}
+.heading-title{
+   height: 310px;
+   text-align: center;
+ 
 }
 h1.heading-1{
    font-size: 60px;
@@ -130,7 +137,9 @@ h1.heading-1{
    width: 100%;
    padding-top: 125px;
    padding-bottom: 126px;
-
+}
+.about-us_wrapper{
+   background-color:#fff;
 }
 .title{
    font-size: 30px;
@@ -177,7 +186,6 @@ h1.heading-1{
 
 /* Our-services */
 .our-services{
-   margin: o auto;
    background-color: #e4fdf9;
    padding-top: 173px;
    padding-bottom: 126px;
@@ -191,7 +199,6 @@ h1.heading-1{
    align-content: space-between;
    margin-top: 114px;
    padding-bottom: 10px;
-   
 }
 .project-our-services{
    background-color: #fff;
@@ -620,3 +627,4 @@ footer{
     font-weight: 700;
     text-align: center;
 }
+

@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -18,9 +19,12 @@ body{
 
 .header{
     /* background-color: darkgoldenrod; */
+       
     padding-top: 75px; /*Внешние отступы*/
-    padding-bottom: 70px;
+    padding-bottom: 70px;   
 }
+
+
 
 
 .heading-1{
@@ -118,9 +122,9 @@ body{
     flex-wrap: wrap; /*Флексы выстраиваются в несколько строк*/
     justify-content: space-between;
     align-items: flex-start;
-
-
+    
 }
+
 .project{
     margin-bottom: 130px;
     margin-left: 2px;
@@ -292,4 +296,5 @@ body{
     margin-bottom: 80px;
 }
   
-  
+
+ 
