@@ -297,4 +297,24 @@ body{
 }
   
 
- 
+ @media(max-width:320px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        width: 200px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-me{
+        width: 200px;
+        text-align: center;
+    }
+    .about-me-row{
+        display: inline-block;
+        width: 200px;
+    }
+
+ }

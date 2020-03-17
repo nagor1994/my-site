@@ -770,20 +770,17 @@
 @media (max-width:320px) {
 
       .header {
-          width: 100%;
+          width: 200px;
           background-image: url(/img/header/header_fon.jpg);
       }  
        .header-row{
            display: flex;
            flex-direction: column;
-           margin-left: 200px;
            text-align: center;
        }
        .header-main{
            width: 100%;
            display: flex;
-           flex-direction: column;
-           margin-left: 200px;
        }
        .header-form{
             margin-top: 200px;
@@ -793,7 +790,6 @@
       }  
       .about{
           width: 100%;
-          margin-left: 200px;
       }
       .about-row{
         display:flex;
@@ -814,7 +810,6 @@
 
       .tools{
           width: 100%;
-          margin-left: 200px;
       }
 
       .tools__row{
@@ -824,7 +819,6 @@
      
       .advantages{
         width: 100%;
-        margin-left: 200px;
       }
       .advantages-row{
           display: flex;
@@ -843,7 +837,6 @@
       }
       .footer{
           width: 100%;
-          margin-left: 200px;
       }
       .footer-row{
           display: flex;

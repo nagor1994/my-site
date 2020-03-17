@@ -64,9 +64,10 @@ header{
    transition: color 0.2s ease-in;
 }
 .heading-fon{
-   background: url(images/pexels-photo-356056.jpg) no-repeat;
+   background-image: url(images/pexels-photo-356056.jpg);
    background-position: center;
    background-size: cover;
+   background-repeat: no-repeat;
    background-color: #282828;
    width: 100%;
    padding-top: 182px;
@@ -577,13 +578,15 @@ h1.heading-1{
    margin: 0;
    padding: 0;  
 }
-.contact-us_navig img{
+.contact-us_navig{
     text-align: center;
     background-color: #3949ab;
-    padding:21px 32px;
     border-radius: 50%; 
-    height: 60px;
-    width: 72px;
+    height: 106px;
+    width: 106px;
+    display: inline-block;
+    padding-top: 24px;
+    
 } 
 .container_form{
    width: 1030px;
