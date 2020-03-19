@@ -22,7 +22,7 @@
     
 }
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     font-size: 0;
@@ -767,98 +767,25 @@
 
 /* Media запросы */
 
-@media (max-width:320px) {
-
-      .header {
-          width: 100%;
-          background-image: url(/img/header/header_fon.jpg);
-      }  
-       .header-row{
-           display: flex;
-           flex-direction: column;
-           margin-left: 200px;
-           text-align: center;
-       }
-       .header-main{
-           width: 100%;
-           display: flex;
-           flex-direction: column;
-           margin-left: 200px;
-       }
-       .header-form{
-            margin-top: 200px;
-       }
-      .container{
-            width: 100%;
-      }  
-      .about{
-          width: 100%;
-          margin-left: 200px;
-      }
-      .about-row{
-        display:flex;
-        flex-direction: column;
-        text-align: center;
+@media(max-width:1170px){
+    .container{
+        max-width: 970px;
+    }
     
-      }
-      .about__namber{
-          display: none;
-      }
-      .about-row__block{
-           width: 100%;
-           margin: 0;
-           margin-bottom: 30px;
-           text-align: center;
-           
-      }
+  
+ }
 
-      .tools{
-          width: 100%;
-          margin-left: 200px;
-      }
+ @media(max-width:992px){
+    .container{    
+        max-width: 750px;
+    }
+  
+ }
 
-      .tools__row{
-          display: flex;
-          flex-direction: column;
-      }
-     
-      .advantages{
-        width: 100%;
-        margin-left: 200px;
-      }
-      .advantages-row{
-          display: flex;
-          flex-direction: column;   
-      }
-      .advantages__button{
-        border-radius: 10px;
-        border-top: 3px solid #dc6006;
-        border-right: 3px solid #68b81e;
-        border-bottom: 3px solid #919a15;
-        border-left: 3px solid #f64d01;
-          
-      }
-      .advantages-row__block{
-          margin-bottom: 60px;
-      }
-      .footer{
-          width: 100%;
-          margin-left: 200px;
-      }
-      .footer-row{
-          display: flex;
-          flex-direction: column;
-      }
-      .footer__img{
-          top:-50px;
-      }
-      .footer__column{
-          display: flex;
-          flex-direction: column;
-          z-index: 1;
-          position: relative;
-          left: -120px;
-          top:180px;
-      }
-
-}
+ @media(max-width:767px){
+    .container{
+        max-width: none;
+        
+    }
+  
+ }
