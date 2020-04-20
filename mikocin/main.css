@@ -525,6 +525,7 @@
     top: -26px;
     margin: 0 auto;
     
+    
 }
 /* Cредства */
 .tools{
@@ -543,20 +544,22 @@
     
 }
 .tools__block{
-    border-top: 2px solid #a8c53a;
+    /* border-top: 2px solid #a8c53a; */
     border-radius: 5px;
     width: 370px;
     height: 586px;
     text-align: center;
     margin-top: 60px;
-    background-color: #fff;
+    background-image: url(img/section-advantages/ram.png);
+    background-position: center;
+    
 }
 .tools__img{
     margin-top: -40px;
     height: 66px;
 }
 .tools__title{ 
-    padding-top: 20px;
+    padding-top: 44px;
     font-size: 24px;
     font-family: "Roboto";
     color: rgb(0, 0, 0);
@@ -678,11 +681,15 @@
 .advantages__button{
     margin-top: 65px;
     margin-bottom: 60px;
+    
 }
 .advantages__button span{
     color: #f64d01;
 }
 .advantages__button a{
+    display: block;
+    width: 890px;
+    margin: 0 auto;
     text-decoration: none;
     font-size: 27px;
     font-weight: 500;
@@ -695,7 +702,7 @@
     border-right: 3px solid #68b81e; 
     border-bottom: 3px solid #919a15;
     border-left: 3px solid #f64d01; 
-    padding: 25px 30px;
+    padding: 31px 30px;
 }
 .advantages__button a:hover{
     transition: ease 0.9s;

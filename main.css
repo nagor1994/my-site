@@ -141,8 +141,12 @@ body{
     margin-bottom: 15px;
     display: block;
     max-width: 100%;
-
 }
+.project-img{
+    width: 577px;
+    height: 393px;
+}
+    
 .project-title{
     font-size: 34px;
     font-weight: 700;
