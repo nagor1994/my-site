@@ -3,34 +3,37 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;/*Боди сам по себе имеет отступы, поэтому пишем 0*/
-    font-family: 'Roboto', sans-serif; /*Подключили шрифты*/
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #101c35;
 
 }
 .container{
     max-width: 1170px; 
-    /*height: 200px; /*Отступ сверху*/
-    /* background-color: cadetblue;Фон */
-    margin-left: auto;   /* Делаем наш контейнер по центру страницы*/
+    margin-left: auto;  
     margin-right: auto; 
-    /*margin: 0 auto;*/ /*Можно записать и так, где 0 - отступ сверху и снизу, право лево авто*/
+    
     
 }
 
 .header{
     /* background-color: darkgoldenrod; */
        
-    padding-top: 75px; /*Внешние отступы*/
-    padding-bottom: 70px;   
+    padding-top: 75px; 
+    padding-bottom: 70px;
+    /* background-image: url(https://dcea.ru/wp-content/uploads/2019/10/fejlec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
 }
 
 
 
 
 .heading-1{
-    font-size: 42px; /*Размер шрифта*/
-    line-height: 80px; /*Высота строки. чтоб увеличить расстояние между именем и прфессией*/
-    font-weight: 700; /*Толщина букв*/
+    font-size: 50px; 
+    line-height: 80px; 
+    font-weight: 700; 
     margin-top: 0;/*У самого h1 есть отступы, избавляемся от них*/
     margin-bottom: 60px;
 }
@@ -45,7 +48,8 @@ body{
 }
 
 .about-me{
-    padding: 80px 0; /*Первое значение верх и низ,2е право и лево*/
+    padding-top: 75px;
+    padding-bottom: 25px;
     background-color: lightskyblue;
     
     
@@ -133,7 +137,7 @@ body{
     margin-bottom: 130px;
     margin-left: 2px;
 }
-.project:last-child, .project:nth-last-child(2){
+.project:last-child {
     margin-bottom: 0;
 }
 
@@ -148,14 +152,14 @@ body{
 }
     
 .project-title{
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
 
 }
 
 .project-description{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 15px;
@@ -165,7 +169,7 @@ body{
     font-weight: 300;
     font-style: italic;
     font-size: 16px;
-    color: cadetblue;
+    color: #014fff;
     text-decoration: none;
 
 }
@@ -190,9 +194,6 @@ body{
     color: darkblue;
     font-weight: 100;
 }
-
-/* Если страницы сайта похожи по стилю, то пишем в этом же ccs
-Делаем дизайн для страницы Проекта */
 
 .header-inner{
     background-color: #e3f0f7;
@@ -257,7 +258,7 @@ body{
 .project-page-discription{
     width: 575px;
     font-size: 22px;
-    line-height: 1.45;/*Междустрочный интервал*/
+    line-height: 1.45;
     font-weight: 300;
     text-align: center;
     margin: 0 auto;
@@ -304,11 +305,29 @@ body{
     text-align: center;
     margin-bottom: 80px;
 }
-  
+.footer-email{
+    display: flex;
+}
+.footer-email a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer__text{
+    margin-right: 20px;
+}  
 
  @media(max-width:1170px){
+
+     .body {
+        padding: 0 20px;
+     }
     .container{
         max-width: 970px;
+        
+    }
+    .project-img{
+        width: 100%;
+        height: auto;
     }
     
   
@@ -321,6 +340,9 @@ body{
         margin: 0 auto;
 
     }
+    .project{
+        margin-bottom: 55px;
+    }
      
   
  }
@@ -331,8 +353,29 @@ body{
         text-align: center;
         
     }
+    .about-me-row{
+        justify-content: center;
+    }
+    .about-me-photo{
+        display: none;
+    }
     .footer-email{
         font-size: 25px;
+        flex-direction: column;
+
     }
  }
+
+ @media (max-width:600px){
+    .project{
+        margin-bottom: 55px;
+    }
+ }
+
+ @media (max-width:600px){
+    .footer__link{
+        font-size: 14px;
+    }
+ }
+
 
