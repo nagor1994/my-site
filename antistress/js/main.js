@@ -33,7 +33,7 @@ $(document).ready(function(){
     }
 })
 
-  var dateEnd = new Date('2021-09-13 00:00:00'),
+  var dateEnd = new Date('2022-09-13 00:00:00'),
     dateNow = new Date(),
     date = Math.floor((dateEnd.getTime() - dateNow.getTime()) / 1000);
 
