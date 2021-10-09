@@ -237,16 +237,17 @@ body{
     box-shadow: 19.799px 19.799px 100px 0px rgba(196, 219, 233, 0.5);/*Тень вокруг картинки*/
     margin-bottom: 55px;
 }
+.footer{
+    background-color: #101c35;
+    color: rgb(211, 195, 195);
+}
 
 .footer__title {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 25px;
 } 
-.footer-inner-page{
-    text-align: center;
-    margin-bottom: 80px;
-}
+
 .footer__email{
     display: flex;
     font-size: 36px;
@@ -255,6 +256,7 @@ body{
 .footer__email a{
     text-decoration: none;
     font-weight: 600;
+    color: lightskyblue;
 }
 .footer__text{
     margin-right: 20px;
