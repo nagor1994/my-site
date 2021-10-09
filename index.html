@@ -12,25 +12,33 @@
 <body>
 	<header class="header">
 	<div class="container">
-		<h1 class="heading-1"> Нагорянский Вадим <br>Верстальщик и Веб-разработчик</h1>
+		<h1 class="heading"> Нагорянский Вадим <br>Верстальщик и Веб-разработчик</h1>
 		<p class="subheading">Качественное выполнение работ в необходимые сроки</p>
-		<div class="social__item">
-			<a class="social-link" href="https://github.com/nagor1994/my-project"><img src="images/github.png" alt="github"> </a>
-			<a class="social-link" href="#"><img src="images/telegram.png" alt="telegram"></a>
-			<a class="social-link" href="https://vk.com/thetombovwolf"><img src="images/vk.png" alt="vk"></a>
-			<a class="social-link" href="#"><img src="images/facebook.png" alt="facebook"></a>
+		<div class="social__row">
+			<div class="social__item">
+				<a class="social__link" href="https://github.com/nagor1994/my-project"><img src="images/github.png" alt="github"> </a>
+			</div>
+			<div class="social__item">
+				<a class="social__link" href="#"><img src="images/telegram.png" alt="telegram"></a>
+			</div>
+			<div class="social__item">
+				<a class="social__link" href="https://vk.com/thetombovwolf"><img src="images/vk.png" alt="vk"></a>
+			</div>
+			<div class="social__item">
+				<a class="social__link" href="#"><img src="images/facebook.png" alt="facebook"></a>
+			</div>		
 		</div>	
 	</div>
 	</header>
 
 	<section class="about-me">		
 		<div class="container">
-			<div class="about-me-row">
+			<div class="about-me__row">
 			<!-- Левая колонка -->
-			<div class="about-me-text">
-				<h2 class="about-me-heading-big">Обо мне:</h2>
+			<div class="about-me__text">
+				<h2 class="about-me__heading--big">Обо мне:</h2>
 				<p>Верстаю и программирую сайты. Могу сделать для вас сайт и запустить в интернете</p>	
-				<h3 class="about-me-heading-small">Навыки:</h3>
+				<h3 class="about-me__heading--small">Навыки:</h3>
 				<ul>
 					<li> создание сайтов</li>
 					<li> верстка сайтов</li>
@@ -39,7 +47,7 @@
 			</div>
 			<!-- Левая колонка -->
 			<!-- Правая колонка -->
-			<div class="about-me-photo">
+			<div class="about-me__photo">
 				<img src="images/img 01.jpg" alt="photo">
 			</div>
 			<!-- Правая колонка -->
@@ -49,41 +57,38 @@
 
 	<section class="portfolio">
 		<div class="container">
-			<div class="prtfolio-title">Портфолио</div>
+			<div class="prtfolio__title">Портфолио</div>
 
-			<div class="portfolio-row">
+			<div class="portfolio__row">
 
 				<div class="project">
-					<img class="project-img" src="./images/rybalka.jpg" alt="project photo 1">
-					<h4 class="project-title">Интернет магазин для рыбалки</h4>	
-					<p class="project-description">Верстка макета</p>
-					<a href="./rybalka/index.html" class="project-link">Ссылка на сайт</a>				
+					<div class="project__img"><img  src="./images/rybalka.jpg" alt="project photo 1"></div>
+					<h4 class="project__title">Интернет магазин для рыбалки</h4>	
+					<p class="project__description">Верстка макета</p>
+					<a class="project__link" href="./rybalka/index.html" >Ссылка на сайт</a>				
 				</div>
 
 				<div class="project">
-					<img class="project-img" src="./images/Web Development Project.jpg" alt="project photo 2">
-					<h4 class="project-title">Web development project</h4>
-					<p class="project-description">Верстка макета</p>	
-					<a href="practic/index.html" class="project-link">Ссылка на сайт</a>				
+					<div class="project__img"><img  src="./images/Web Development Project.jpg" alt="project photo 2"></div>
+					<h4 class="project__title">Web development project</h4>
+					<p class="project__description">Верстка макета</p>	
+					<a class="project__link" href="practic/index.html" >Ссылка на сайт</a>				
 				</div>
 
 
 				<div class="project">
-					<img class="project-img" src="./images/mikocin111.jpg" alt="project photo 3">
-					<h4 class="project-title">Микоцин</h4>
-					<p class="project-description">Верстка макета</p>	
-					<a href="mikocin/index.html" class="project-link">Ссылка на сайт</a>				
+					<div class="project__img"><img src="./images/mikocin111.jpg" alt="project photo 3"></div>
+					<h4 class="project__title">Микоцин</h4>
+					<p class="project__description">Верстка макета</p>	
+					<a class="project__link" href="mikocin/index.html" >Ссылка на сайт</a>				
 				</div>
 
 				<div class="project">
-					<img class="project-img" src="./images/antistress.JPG" alt="project photo 4">
-					<h4 class="project-title">Antistress</h4>	
-					<p class="project-description">Верстка макета</p>
-					<a href="antistress/index.html" class="project-link">Ссылка на сайт</a>				
+					<div class="project__img"><img src="./images/antistress.jpg" alt="project photo 4"></div>
+					<h4 class="project__title">Antistress</h4>	
+					<p class="project__description">Верстка макета</p>
+					<a class="project__link" href="antistress/index.html" >Ссылка на сайт</a>				
 				</div>
-
-
-
 			</div>
 		</div>
 
@@ -91,8 +96,8 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="footer-title">Вам нужна верстка, или дизайн макета?</div>
-			<div class="footer-email">
+			<div class="footer__title">Вам нужна верстка, или дизайн макета?</div>
+			<div class="footer__email">
 				<div class="footer__text">обращайтесь</div>	
 				<div class="footer__link"><a href="mailto:nagoryansky.vadya@yandex.ru">nagoryansky.vadya@meta.ua</a> </div>				
 			</div>			
