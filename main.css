@@ -269,10 +269,7 @@ body{
         max-width: 970px;
         
     }
-    .project-img{
-        width: 100%;
-        height: auto;
-    }
+
     
   
  }
@@ -313,7 +310,7 @@ body{
     .about-me__photo{
         display: none;
     }
-    .footer-email{
+    .footer__email{
         font-size: 25px;
         flex-direction: column;
 
