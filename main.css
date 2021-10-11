@@ -43,7 +43,6 @@ body{
     margin-bottom: 20px;
 }
 .social__link{
-    margin-right: 30px;
     text-decoration: none;
 }
 .social__row{
@@ -52,6 +51,12 @@ body{
     text-align: center;
     align-items: center;
     justify-content: flex-start;
+}
+.social__item{
+    margin-right: 30px;
+}
+.social__item:last-child{
+    margin-right: 0;
 }
 
 
