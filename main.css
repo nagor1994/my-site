@@ -303,6 +303,7 @@ body{
     .container{
         max-width: none;
         text-align: center;
+        padding: 0 20px;
         
     }
     .about-me{
@@ -330,6 +331,13 @@ body{
  @media (max-width:600px){
     .footer__link{
         font-size: 19px;
+    }
+ }
+
+ @media (max-width:320px){
+    .header__title{
+        font-size: 37px;
+        line-height: 49px;
     }
  }
 
