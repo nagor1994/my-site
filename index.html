@@ -7,16 +7,109 @@
 	<title> Главная страница сайта</title>
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-	<header class="header">
-	<div class="container">
-		<div class="header__title">
-			<h1 class="heading"> Нагорянский Вадим <br>Верстальщик и Веб-разработчик</h1>
-			<p class="subheading">Качественное выполнение работ в необходимые сроки</p>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="#" class="header__logo">
+                        <img src="./images/Logo.png" alt="logo">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__link"><a href="#about">Обо мне</a></li>
+                            <li class="header__link"><a href="#skill">Навыки</a></li>
+                            <li class="header__link"><a href="#portfolio">Портфоли</a></li>
+                            <li class="header__link"><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__title">
+                    <h1 class="heading"> Нагорянский Вадим <br> <span>HTML-Верстальщик</span></h1>
+                    <p class="subheading">html/css/js</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<section class="about-me" id="about">		
+		<div class="container">
+			<div class="about-me__main">
+				<h2 class="about-me__heading">Обо мне</h2>
+				<p class="about-me__subheading">Верстаю сайты на чистом HTML и CSS, с использованием JS, и библиотеки JQuery.</p>
+			</div>
+			<div class="about-me__row">
+			<div class="skill">
+				<h3 class="skill__title" id="skill">Навыки:</h3>
+				<ul class="skill__item">
+					<li class="skill__text">HTML5, CSS3 - разметка и визуальное оформление любого сайта.</li>
+					<li class="skill__text"> базовые знания JavaScript</li>
+					<li class="skill__text"> JQuery (например плагин Owl Carousel.)</li>
+					<li class="skill__text"> Работа с Adobe Photoshop (нарезка изображения)</li>
+					<li class="skill__text"> Git, GitHub</li>
+					<li class="skill__text"> Figma на уровне Веб-дизайнер</li>
+					<li class="skill__text"> Opencart, WordPress редактирование шаблона по умолчанию, и добавление новых тем.</li>
+				</ul>	
+			</div>
+			<div class="about-me__photo">
+				<img src="images/about=me.png" alt="photo">
+			</div>
 		</div>
-		
+		</div>
+	</section>	
+
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="portfolio__title">Портфолио</div>
+
+			<div class="portfolio__row">
+				<div class="project">
+					<div class="project__img"><img src="./images/antistres.jpg" alt="project photo 4"></div>
+					<h4 class="project__title">Antistress</h4>	
+					<p class="project__description">Средство от стресса</p>
+					<a class="project__link" href="antistress/index.html" >Ссылка на сайт</a>				
+				</div>
+				<div class="project">
+					<div class="project__img"><img  src="./images/rybalka.jpg" alt="project photo 1"></div>
+					<h4 class="project__title">Интернет магазин</h4>	
+					<p class="project__description">Всё для рыбалки</p>
+					<a class="project__link" href="./rybalka/index.html" >Ссылка на сайт</a>				
+				</div>
+
+				<div class="project">
+					<div class="project__img"><img  src="./images/lumos.JPG" alt="project photo 2"></div>
+					<h4 class="project__title">Практический марафон</h4>
+					<p class="project__description">Пробуди свою внутреннюю силу</p>	
+					<a class="project__link" href="lumos22/index.html" >Ссылка на сайт</a>				
+				</div>
+				<div class="project">
+					<div class="project__img"><img src="./images/micocin.JPG" alt="project photo 3"></div>
+					<h4 class="project__title">Микоцин</h4>
+					<p class="project__description">Средство против грибка</p>	
+					<a class="project__link" href="mikocin/index.html" >Ссылка на сайт</a>				
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__title">Вам нужна верстка?</div>
+			<div class="footer__email">
+				<div class="footer__text">обращайтесь</div>	
+				<div class="footer__link" id="contact"><a href="mailto:nagoryansky.vadya@yandex.ru">nagoryansky.vadya@meta.ua</a> </div>				
+			</div>	
+					
 		<div class="social__row">
 			<div class="social__item">
 				<a class="social__link" href="https://github.com/nagor1994/my-project"><img src="images/github.png" alt="github"> </a>
@@ -30,80 +123,9 @@
 			<div class="social__item">
 				<a class="social__link" href="#"><img src="images/facebook.png" alt="facebook"></a>
 			</div>		
-		</div>	
-	</div>
-	</header>
-
-	<section class="about-me">		
-		<div class="container">
-			<div class="about-me__row">
-			<!-- Левая колонка -->
-			<div class="about-me__text">
-				<h2 class="about-me__heading--big">Обо мне:</h2>
-				<p>Верстаю и программирую сайты. Могу сделать для вас сайт и запустить в интернете</p>	
-				<h3 class="about-me__heading--small">Навыки:</h3>
-				<ul>
-					<li> Навыки работы с HTML5, CSS3</li>
-					<li> базовые знания JavaScript (фреймворк jQuery, например Owl Carousel 2)</li>
-					<li> Работа с Adobe Photoshop (нарезка изображения)</li>
-					<li> Git, GitHub</li>
-					<li> Figma на уровне Веб-дизайнер</li>
-					<li> Opencart, редактирование шаблона по умолчанию, и добавление новых тем.</li>
-				</ul>	
-			</div>
-			<!-- Левая колонка -->
-			<!-- Правая колонка -->
-			<div class="about-me__photo">
-				<img src="images/img 01.jpg" alt="photo">
-			</div>
-			<!-- Правая колонка -->
-		</div>
-		</div>
-	</section>	
-
-	<section class="portfolio">
-		<div class="container">
-			<div class="prtfolio__title">Портфолио</div>
-
-			<div class="portfolio__row">
-				<div class="project">
-					<div class="project__img"><img src="./images/antistres.jpg" alt="project photo 4"></div>
-					<h4 class="project__title">Antistress</h4>	
-					<p class="project__description">Верстка макета</p>
-					<a class="project__link" href="antistress/index.html" >Ссылка на сайт</a>				
-				</div>
-				<div class="project">
-					<div class="project__img"><img  src="./images/rybalka.jpg" alt="project photo 1"></div>
-					<h4 class="project__title">Интернет магазин для рыбалки</h4>	
-					<p class="project__description">Верстка макета</p>
-					<a class="project__link" href="./rybalka/index.html" >Ссылка на сайт</a>				
-				</div>
-
-				<div class="project">
-					<div class="project__img"><img  src="./images/Web Development Project.jpg" alt="project photo 2"></div>
-					<h4 class="project__title">Web development project</h4>
-					<p class="project__description">Верстка макета</p>	
-					<a class="project__link" href="practic/index.html" >Ссылка на сайт</a>				
-				</div>
-				<div class="project">
-					<div class="project__img"><img src="./images/micocin.JPG" alt="project photo 3"></div>
-					<h4 class="project__title">Микоцин</h4>
-					<p class="project__description">Верстка макета</p>	
-					<a class="project__link" href="mikocin/index.html" >Ссылка на сайт</a>				
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__title">Вам нужна верстка, или дизайн макета?</div>
-			<div class="footer__email">
-				<div class="footer__text">обращайтесь</div>	
-				<div class="footer__link"><a href="mailto:nagoryansky.vadya@yandex.ru">nagoryansky.vadya@meta.ua</a> </div>				
-			</div>			
+		</div>		
 		</div>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 </html>
