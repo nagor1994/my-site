@@ -333,6 +333,10 @@ body{
     margin-bottom: 45px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
+.programm__img img{
+    max-width: 100%;
+    height: auto;
+}
 .programm__inner{
     width: 70%;
     padding-left: 30px;
@@ -488,6 +492,10 @@ body{
     position: absolute;
     top: 0;
 }
+/* .strong__img img{
+    max-width: 100%;
+    height: auto;
+} */
 .strong__number{
     position: absolute;
     top: 0;
@@ -566,11 +574,6 @@ body{
     padding-bottom: 120px;
     /* display: none; */
 }
-.practical__inner{
-    display: flex;
-    justify-content: center;
-    margin-top: 65px;
-}
 .practical__blok{
     display: block;
     background-color: #C4C4C4;
@@ -581,8 +584,7 @@ body{
     line-height: 29px;
     text-transform: uppercase;
     margin-right: 30px;
-    margin: 0 auto;
-    width: 540px;
+    margin-bottom: 20px;
     padding: 25px 0;
     
 }
@@ -593,13 +595,14 @@ body{
 
 .practical__row{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 63px;
     margin-bottom: 75px;
 }
-.practical__item{
+.practical__left,.practical__right{
     width: 50%;
+}
+.practical__item{
     text-align: center;
     margin-bottom: 50px;
     padding: 0 15px;
@@ -610,6 +613,10 @@ body{
 .practical__img{
     width: 100%;
     margin-bottom: 48px;
+}
+.practical__img img{
+    max-width: 100%;
+    height: auto;
 }
 .practical__text{
     font-size: 18px;
@@ -664,6 +671,10 @@ body{
 .author__photo{
     margin-right: 30px;
 }
+.author__photo img{
+    max-width: 100%;
+    height: auto;
+}
 .author__item{
     display: flex;
     margin-bottom: 18px;
@@ -682,10 +693,10 @@ body{
 .contact{
     padding-top: 130px;
     padding-bottom: 119px;
-    background:  url(/img/contact/contact.png),url(/img/contact/фиол.png);
+    background: url(/lumos22/img/contact/contact.png), rgba(66, 25, 109, 0.9);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #42196D;
+    /* background-color: #42196D; */
     /* display: none; */
     
 }
@@ -819,7 +830,7 @@ body{
 .footer__support{
     font-weight: 700;
     width: 33.33333%;
-    margin-left: 44px;
+    padding-left: 44px;
 }
 
 .support{
@@ -871,6 +882,22 @@ body{
     }
     .container{
         width: 100%;
+    }
+}
+@media (max-width:1165px){
+    .practical__row{
+        flex-direction: column;
+    }
+    .practical__blok{
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .practical__item{
+        margin-top: 35px;
+    }
+    .practical__left,.practical__right{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 @media (max-width:1024px) {
@@ -958,7 +985,6 @@ body{
     .header__item{
         width: 40%;
     }
-    
     .programm__discription--left{
         font-size: 17px;
         width: auto;
@@ -989,8 +1015,41 @@ body{
         justify-content: center;
         margin: 0 auto;
     } 
-
     .knowledge__blok{
+        width: 100%;
+    }
+    .author__row{
+        flex-direction: column;
+    }
+    .author__wrapper{
+        margin-top: 30px;
+    }
+    .contact__row{
+        flex-direction: column;
+    }
+    .contact__left{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .form{
+        margin: 0 auto;
+    }
+    .footer__row{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer__icon{
+        display: none;
+    }
+    .footer__line{
+        display: none;
+    }
+    .footer__support, .footer__contact{
+        width: 50%;
+    }
+    .footer__address{
+        margin-top: 20px;
+        text-align: center;
         width: 100%;
     }
 }
@@ -1029,6 +1088,21 @@ body{
         z-index: 1;
         transform: translate(92px, 965px);
     }
+    .practical__button{
+        width: 230px;
+    }
+    .footer__row{
+        flex-direction: column;
+    }
+    .footer__support, .footer__contact{
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .footer__support{
+        margin-bottom: 10px;
+    }
+    
 }
 @media (max-width:375px) {
     .title{
@@ -1043,6 +1117,9 @@ body{
     #number-5{
         z-index: 1;
         transform: translate(92px, 1020px);
+    }
+    .form{
+        width: 100%;
     }
 }
 @media (max-width:320px) {

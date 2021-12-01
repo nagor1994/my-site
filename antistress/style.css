@@ -761,6 +761,7 @@ p{
     font-size: 0;
     color: transparent;
     position: relative;
+
 }
 .burger__item::before,
 .burger__item::after{
@@ -823,7 +824,7 @@ p{
         display: none;
         position: absolute;
         left: 0;
-        bottom: -195px;
+        top: 63px;
         z-index: 2;
         flex-direction: column;
         border-radius: 10px;

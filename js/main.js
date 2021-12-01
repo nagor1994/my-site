@@ -1,5 +1,4 @@
-$(function() {
-
+$(function(){
     let nav = $("#nav");
     let header = $("#header");
     let headerH;

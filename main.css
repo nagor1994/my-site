@@ -54,6 +54,7 @@ body{
 
 .header__logo img{
     max-width: 100%;
+    
 }
 .header__burger{
     display: none;
@@ -193,7 +194,7 @@ a:link, a:visited {
 
 .project{
     width: 49%;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     margin-left: 2px;
 }
 .project:last-child {

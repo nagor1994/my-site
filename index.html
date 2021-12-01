@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title> Главная страница сайта</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -48,7 +49,7 @@
 				<p class="about-me__subheading">Верстаю сайты на чистом HTML и CSS, с использованием JS, и библиотеки JQuery.</p>
 			</div>
 			<div class="about-me__row">
-			<div class="skill">
+			<div class="skill" data-aos="fade-up" data-aos-duration="3000">
 				<h3 class="skill__title" id="skill">Навыки:</h3>
 				<ul class="skill__item">
 					<li class="skill__text">HTML5, CSS3 - разметка и визуальное оформление любого сайта.</li>
@@ -60,7 +61,7 @@
 					<li class="skill__text"> Opencart, WordPress редактирование шаблона по умолчанию, и добавление новых тем.</li>
 				</ul>	
 			</div>
-			<div class="about-me__photo">
+			<div class="about-me__photo" data-aos="fade-down" data-aos-duration="3000">
 				<img src="images/about=me.png" alt="photo">
 			</div>
 		</div>
@@ -72,26 +73,26 @@
 			<div class="portfolio__title">Портфолио</div>
 
 			<div class="portfolio__row">
-				<div class="project">
+				<div class="project" data-aos="zoom-in-up" data-aos-duration="3000">
 					<div class="project__img"><img src="./images/antistres.jpg" alt="project photo 4"></div>
 					<h4 class="project__title">Antistress</h4>	
 					<p class="project__description">Средство от стресса</p>
 					<a class="project__link" href="antistress/index.html" >Ссылка на сайт</a>				
 				</div>
-				<div class="project">
+				<div class="project" data-aos="zoom-in-left" data-aos-duration="2800">
 					<div class="project__img"><img  src="./images/rybalka.jpg" alt="project photo 1"></div>
 					<h4 class="project__title">Интернет магазин</h4>	
 					<p class="project__description">Всё для рыбалки</p>
 					<a class="project__link" href="./rybalka/index.html" >Ссылка на сайт</a>				
 				</div>
 
-				<div class="project">
+				<div class="project" data-aos="zoom-in-right"data-aos-duration="2600">
 					<div class="project__img"><img  src="./images/lumos.JPG" alt="project photo 2"></div>
 					<h4 class="project__title">Практический марафон</h4>
 					<p class="project__description">Пробуди свою внутреннюю силу</p>	
 					<a class="project__link" href="lumos22/index.html" >Ссылка на сайт</a>				
 				</div>
-				<div class="project">
+				<div class="project" data-aos="zoom-in-left" data-aos-duration="2400">
 					<div class="project__img"><img src="./images/micocin.JPG" alt="project photo 3"></div>
 					<h4 class="project__title">Микоцин</h4>
 					<p class="project__description">Средство против грибка</p>	
@@ -107,7 +108,7 @@
 			<div class="footer__title">Вам нужна верстка?</div>
 			<div class="footer__email">
 				<div class="footer__text">обращайтесь</div>	
-				<div class="footer__link" id="contact"><a href="mailto:nagoryansky.vadya@yandex.ru">nagoryansky.vadya@meta.ua</a> </div>				
+				<div class="footer__link" id="contact" data-aos="flip-left" data-aos-duration="3000"><a href="mailto:nagoryansky.vadya@yandex.ru">nagoryansky.vadya@meta.ua</a> </div>				
 			</div>	
 					
 		<div class="social__row">
@@ -126,6 +127,10 @@
 		</div>		
 		</div>
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 	<script src="./js/main.js"></script>
 </body>
 </html>
