@@ -57,7 +57,7 @@ p,ul,li{
 }
 .delivery_link::before{
     content: "";
-    background-image: url(/rybalka/img/header/gray_circle.png);
+    background-image: url(../img/header/gray_circle.png);
     background-position: center;
     background-repeat: no-repeat;
     padding-right: 40px;
@@ -292,7 +292,7 @@ p,ul,li{
 }
 .header__menu__link a:hover{
     color: #009ee2;
-    cursor: url("/rybalka/img/header/click.png"), pointer;
+    cursor: url("../img/header/click.png"), pointer;
     transition: all 0.3s ease 0s;
 }
 /*//Header nav*/
@@ -427,7 +427,7 @@ p,ul,li{
     transform: translate(50%, -40%);
 }
 .owl-theme .owl-dots .owl-dot.active span{
-    background-image: url(/rybalka/img/header/blue-circle.png);
+    background-image: url(../img/header/blue-circle.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -435,7 +435,7 @@ p,ul,li{
     background-color: rgba(78%,21%,0%,9%);
 }
 .owl-theme .owl-dots .owl-dot span{
-    background-image: url(/rybalka/img/header/white_circle.png);
+    background-image: url(../img/header/white_circle.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: rgba(236, 236, 236, 0.09);
