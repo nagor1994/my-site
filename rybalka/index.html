@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Магазин для рыбалки</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" href="./libs/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./libs/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="dalivery" >
     <div class="container">
-            <div class="delivery_row">
-            <ul class="delivery-nav">
+            <div class="delivery__row">
+            <ul class="delivery__item">
                 <li class="delivery_link"><a href="#">Доставка</a></li>
                 <li class="delivery_link"><a href="#">Оплата</a></li>
                 <li class="delivery_link"><a href="#">Возврат</a></li>
                 <li class="delivery_link"><a href="#">Оптовым покупателям</a></li>
             </ul>
-            <div class="delivery-phone">
-                <p class="delivery-phone__text">бесплатно по России <span>8-800-000-00-00</span></p>
+            <div class="delivery__contact">
+                <p class="delivery__text">бесплатно по России <span>8-800-000-00-00</span></p>
             </div>
             </div>
-        </div>
+    </div>
     </div>
     <!-- Header -->
    <header class="header">
@@ -32,25 +33,31 @@
              <div class="header__logo">
                 <div class="logo">LOGOtype</div>
              </div>
-             <div class="header__search">
-                <input class="search" type="search" value="Что Вы ищете?">
-                <div class="header__search__img"><img src="./img/header/search.png" alt="search"></div>
+             <div class="search">
+                <input class="search__item" type="search" value="Что Вы ищете?">
+                <div class="search__img"><img src="./img/header/search.png" alt="search"></div>
              </div>
              <div class="header__items">
-                <div class="header__items__icon"><img class="header__items__img" src="./img/header/refer.png" alt="refer"> </div>
-                <div class="header__items__icon"><img class="header__items__img" src="./img/header/heart-outline.png" alt="heart"><img class="number" src="./img/header/3.png"alt="3"></div>
-                <div class="header__items__icon"><img class="header__items__img" src="./img/header/shopping-cart.png" alt="cart"><img class="number" src="./img/header/2.png"alt="2"></div>
+                <div class="header__icon"><img  src="./img/header/refer.png" alt="refer"> </div>
+                <div class="header__icon"><img  src="./img/header/heart-outline.png" alt="heart"></div>
+                <div class="header__icon"><img  src="./img/header/shopping-cart.png" alt="cart"></div>
              </div>
          </div>
 
-         <div class="header-nav">
-            <div class="header__category">
-               <div class="header__category__burger"><img src="./img/header/burger.png" alt="burger"></div>
-               <p class="header__category__text">Каталог товаров</p>
-               <div class="header__category__icon"><img  src="./img/header/arrow-point-to-down.png" alt="down"></div>
+         <nav class="nav">
+            <div class="nav__category">
+                <div class="block one">
+                    <div class="block__item">
+                        <div class="block__title">Каталог товаров</div>
+                        <div class="block__text"></div>
+                    </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
             </div>
             <ul class="header__menu">
-                <img class="header__menu__icon" src="./img/header/strelka.png" alt="strelka">
+                <img class="header__menu__icon" src="img/header/strelka.png" alt="strelka">
                 <li class="header__menu__link"><a href="#">О компании</a></li>
                 <li class="header__menu__link"><a href="#">Акции</a></li>
                 <li class="header__menu__link"><a href="#">Новости</a></li>
@@ -58,7 +65,7 @@
                 <li class="header__menu__link"><a href="#">Эксперты</a></li>
                 <li class="header__menu__link"><a href="#">Контакты</a></li>
             </ul>
-         </div>
+        </nav>
 
          <main class="header-main">
             <div class="sideBar">
@@ -132,23 +139,35 @@
                 </div>
                 </div>
             <div class="main-content">
-                <div class="main-content__row">
-                    <div class="main-content__desc">
-                        <div class="main-content__title">Специальные предложения</div>
-                        <div class="main-content__model">катушка Adrenalin 7300 BC</div>
-                        <div class="main-content__price">5 600 р.</div>
-                        <a class="main-content__button" href="#">Купить</a>
-                        <div class="main-content__item">
-                            <img class="main-content__circle" src="./img/header/blue-circle.png" alt="circle">
-                            <img class="main-content__circle" src="./img/header/white_circle.png" alt="circle">
-                            <img class="main-content__circle" src="./img/header/white_circle.png" alt="circle">
+                <div class="owl-carousel owl-theme">
+                    <div class="main-content__row">
+                        <div class="main-content__desc">
+                            <div class="main-content__title">Специальные предложения</div>
+                            <div class="main-content__model">катушка Adrenalin 7300 BC</div>
+                            <div class="main-content__price">5 600 р.</div>
+                            <a class="main-content__button" href="#">Купить</a>
                         </div>
-                        
+                        <div class="main-content__img"><img src="img/discounts/img2.png" alt=""></div>    
                     </div>
-                    <div class="main-content__img"><img src="img/header/img1.png" alt=""></div>
-                    
+                    <div class="main-content__row">
+                        <div class="main-content__desc">
+                            <div class="main-content__title">Специальные предложения</div>
+                            <div class="main-content__model">катушка Adrenalin 7300 BC</div>
+                            <div class="main-content__price">5 600 р.</div>
+                            <a class="main-content__button" href="#">Купить</a>
+                        </div>
+                        <div class="main-content__img"><img src="img/discounts/img2.png" alt=""></div>    
+                    </div>
+                    <div class="main-content__row">
+                        <div class="main-content__desc">
+                            <div class="main-content__title">Специальные предложения</div>
+                            <div class="main-content__model">катушка Adrenalin 7300 BC</div>
+                            <div class="main-content__price">5 600 р.</div>
+                            <a class="main-content__button" href="#">Купить</a>
+                        </div>
+                        <div class="main-content__img"><img src="img/discounts/img2.png" alt=""></div>    
+                    </div>
                 </div>
-
                 <div class="header-catalog">
                     <div class="header-catalog__row">
                         <!-- 1 block -->
@@ -156,7 +175,7 @@
                             <div class="header-catalog__wrapper">
                             <div class="header-catalog__text">новые <br> приманки</div>
                             <div class="header-catalog__desc">для подледной <br> ловли</div>
-                            <div class="header-catalog__nav"><img src="./img/header/white-arrow-point-to-right.png" alt="right"></div>
+                            <div class="header-catalog__link"><img src="./img/header/white-arrow-point-to-right.png" alt="right"></div>
                             </div>  
                             <div class="header-catalog__img"><img class="rawbite" src="./img/header/rawbite.png" alt="rawbite"></div>  
                         </div>
@@ -165,7 +184,7 @@
                             <div class="header-catalog__wrapper">
                             <div class="header-catalog__text">скачайте <br>каталог</div>
                             <div class="header-catalog__desc">для оптовиков</div>
-                            <div class="header-catalog__nav"><img src="./img/header/white-arrow-point-to-right.png" alt="right"></div>
+                            <div class="header-catalog__link"><img src="./img/header/white-arrow-point-to-right.png" alt="right"></div>
                             </div>  
                             <div class="header-catalog__img"><img class="book" src="./img/header/book.png" alt="book"></div>  
                         </div>
@@ -174,7 +193,7 @@
                             <div class="header-catalog__wrapper">
                             <div class="header-catalog__text">Эксперты<br> отвечают</div>
                             <div class="header-catalog__desc">на ваши вопросы</div>
-                            <div class="header-catalog__nav"><img src="./img/header/white-arrow-point-to-right.png" alt="right"></div>
+                            <div class="header-catalog__link"><img src="./img/header/white-arrow-point-to-right.png" alt="right"></div>
                             </div>  
                             <div class="header-catalog__img"><img class="man" src="./img/header/man.png" alt="man"></div>  
                         </div>
@@ -476,8 +495,7 @@
 
         </div>
     </footer>
-        <script src="./libs/jquery-3.5.0.min.js"></script>
-        <script src="./libs/dist/owl.carousel.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
         <script src="./js/main.js"></script>
 
 </body>
