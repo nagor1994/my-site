@@ -693,10 +693,10 @@ body{
 .contact{
     padding-top: 130px;
     padding-bottom: 119px;
-    background: url(/lumos22/img/contact/contact.png), rgba(66, 25, 109, 0.9);
+    background: url(../img/contact/contact.png), rgba(66, 25, 109, 0.9);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: #42196D; */
+    background-color: #42196D;
     /* display: none; */
     
 }
