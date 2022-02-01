@@ -560,11 +560,8 @@ p,ul,li{
     align-items: center;
 }
 .sales__block {
-    width: 262px;
-    height: 450px;
     background: linear-gradient(to bottom, #0c92ca, #3bc1f0);
     padding-left: 28px;
-    position: relative;
 }
 .sales__name {
     font-size: 33px;
@@ -588,20 +585,24 @@ p,ul,li{
     color: rgb(255, 255, 255);
     line-height: 0.833;
     position: absolute;
-    padding-top: 236px;
+    bottom: 0;
+    transform: translateY(-50px);
 }
 .sales__img img {
-    /* height: 300px; */
-    width:262px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     position: absolute;
-    top: 105px;
-    right: -17px;
+    top: 0;
+    right: 0;
+    transform: translate(10%,40%);
 }
 .sales__img__pure{
     position: absolute;
     top: 0;
     z-index: 2;
     left: 0;
+    transform: translate(10px, 10px);
 }
 .sales__discont{
     font-size: 18.249px;
@@ -613,37 +614,35 @@ p,ul,li{
     position: absolute;
     bottom: 181px;
     right: 101px;
-  
 }
-
 .sales__hit__block {
-    width: 262px;
-    height: 474px;
+    min-height: 475px;
     box-shadow: 0px 18px 21px 0px rgba(0, 0, 0, 0.09);
     position: relative;
+    margin-right: 20px;
+}
+.sales__hit__block:last-child{
+    margin-right: 0;
 }
 .hit__discount{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
     color: #fff;
-    padding-left: 17px;
-    padding-top: 7px;
-    width: 88px;
-    height: 36px;
+    padding: 7px 17px;
     background-color: #00963f;
     letter-spacing: 1px;
-    position: absolute;
-   
 }
 .hit__name {
-    color: #fff;
-    padding-left: 17px;
-    padding-top: 7px;
-    width: 58px;
-    height: 34px;
-    background: linear-gradient(to right, #2eb4e5, #0e94cb);
-    overflow: hidden;
-    margin-top: 45px;
-    z-index: 2;
     position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50px);
+    z-index: 2;
+    padding: 7px 17px;
+    color: #fff;
+    background: linear-gradient(to right, #2eb4e5, #0e94cb);
 }
 .hit__img {
     position: absolute;
@@ -657,11 +656,19 @@ p,ul,li{
 }
 
 .hit__item {
-    padding-top: 261px;
-    padding-bottom: 16px;
-    padding-left: 17px;
+    display: flex;
+    justify-content: space-between;
     position: absolute;
+    padding-left: 5px;
+    bottom: 0;
+    transform: translate(10px, -180px);
 }
+.hit__item img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .heart {
     padding-left: 100px;
 }
@@ -672,16 +679,18 @@ p,ul,li{
     line-height: 1.25;
     padding-left: 17px;
     position: absolute;
-    margin-top: 292px;
+    bottom: 0;
+    transform: translateY(-135px);
 }
 .hit__price {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-85px);
     padding-left: 17px;
-    padding-top: 5px;
     font-size: 18px;
     font-family: "Panton ExtraBold";
     color: rgb(0, 0, 0);
     line-height: 1.222;
-    margin-top: 341px;
     
 }
 .hit__price span{
@@ -702,15 +711,15 @@ p,ul,li{
 
 }
 .hit__button {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    display: block;
-    width: 224px;
+    display: inline-block;
     background: linear-gradient(to right, #2eb4e5, #0e94cb);
-    padding: 20px 0;
+    padding: 20px 45px;
     border-radius: 5px;
     position: absolute;
-    bottom: 20px;
-    left: 16px;
+    bottom: 20px;    
 }
 
 .hit__button:hover{
@@ -725,6 +734,19 @@ p,ul,li{
     font-weight: bold;
     line-height: 1.375;
     letter-spacing: 3px;
+}
+.owl-nav {
+    position: absolute;
+    top: -6rem;
+    right: 0;
+    background-color: #a1a2a2;
+}
+.owl-nav .owl-prev, .owl-nav.owl-next{
+    border-radius: 50%;
+    background-color: #000;
+}
+.owl-nav button.owl-prev{
+    background: red;
 }
 
 /* NEWS */
