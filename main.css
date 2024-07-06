@@ -360,6 +360,9 @@ a:link, a:visited {
         max-width: 970px;
         
     }
+    .about-me__row{
+        padding: 0 40px;
+    }
 
  }
 
@@ -382,6 +385,11 @@ a:link, a:visited {
     }
      
   
+ }
+ @media (max-width:840px){
+    .about-me__row{
+        padding: 0 40px;
+    }
  }
 
  @media(max-width:767px){
@@ -463,6 +471,7 @@ a:link, a:visited {
     }
     .about-me__row{
         justify-content: center;
+        padding: 0 40px;
     }
     .about-me__photo{
         display: none;
