@@ -160,7 +160,7 @@ a:link, a:visited {
 .skill__item{
     font-weight: 300;
     font-size: 28px;
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 .skill__text{
     margin-bottom: 10px;
@@ -215,6 +215,7 @@ a:link, a:visited {
 }
 .project__img:hover{
     border: 3px solid rgb(102 153 255);
+    transition: all 0.5s ease 0s;
 }
 .project__title{
     font-size: 30px;
