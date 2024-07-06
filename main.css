@@ -173,6 +173,11 @@ a:link, a:visited {
 .portfolio{
     padding-top: 75px;
     padding-bottom: 45px;
+    background: rgba(0,0,0,0.22) url(./images/back-portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: rgb(246, 222, 222);
 
 }
 .portfolio__title{
@@ -190,6 +195,7 @@ a:link, a:visited {
     justify-content: space-between;
     align-items: flex-start;
     
+    
 }
 
 .project{
@@ -205,17 +211,25 @@ a:link, a:visited {
     margin-bottom: 15px;
     height: 400px;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    /* border: 3px solid rgb(27, 50, 98); */
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+   
 }
 .project__img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
+    
 }
 .project__img:hover{
-    border: 3px solid rgb(102 153 255);
-    transition: all 0.5s ease 0s;
+    /* border-color: rgb(255, 165, 0); Изменение цвета рамки */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличение тени */
+    transform: scale(1.05); /* Легкое увеличение размера */
+    transition: all 0.3s ease 0s;
 }
 .project__title{
     font-size: 30px;
@@ -232,10 +246,10 @@ a:link, a:visited {
 }
 
 .project__link{
-    font-weight: 300;
+    font-weight: 700;
     font-style: italic;
     font-size: 16px;
-    color: #014fff;
+    color: #FF8100;
     text-decoration: none;
 
 }
