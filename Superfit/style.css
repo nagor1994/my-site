@@ -1,0 +1,569 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Защита от появления горизонтальной полосы прокрутки */
+}
+html {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0 20px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+}
+.logo {
+        font-weight: 900;
+        font-size: 42px;
+        
+        color: #ffffff;
+        text-decoration: none;
+        display: inline-block;
+        letter-spacing: 11.5px; /* Сближаем буквы, как на лого */
+    
+        /* Создаем темно-синюю обводку (толщина 10px, цвет из макета) */
+        -webkit-text-stroke: 10px #2c3a61;
+        
+        /* Дополнительно для старых браузеров, чтобы сгладить углы обводки */
+        paint-order: stroke fill; 
+}
+
+.phone__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px; /* Отступ между иконкой и номером */
+    color: #0e1e38; /* Темно-синий цвет текста со скрина */
+    font-weight: 600;
+    font-size: 16px; 
+    transition: color 0.2s ease;
+}
+
+/* Стили для иконки */
+.phone__icon {
+    width: 18px; /* Регулируй размер под макет */
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(21%) sepia(31%) saturate(1243%) hue-rotate(187deg) brightness(97%) contrast(88%);
+}
+
+/* Ховер-эффект для интерактивности */
+.phone__link:hover {
+    color: #0056b3; /* Цвет при наведении */
+}
+.phone-link:hover .phone-icon {
+    fill: #0056b3;
+}
+
+.main{
+    background-color: #030C19;
+    margin-bottom: 100px;
+    padding: 40px 0;
+    width: 100%;
+    /* height: 100vh; */
+}
+.main__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.main__title {
+    font-size: 40px; 
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    background-color: #020A15;
+    padding: 30px 0 30px 30px;
+    flex: 0 1 50%;
+}
+.main__img{
+    flex: 0 1 50%;
+    max-width: 650px;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+}
+.main__photo {
+    width: 100%;       /* Растягиваем на всю ширину обертки */
+    height: auto;      /* Высота подстроится автоматически и пропорционально */
+    display: block;
+    object-fit: contain;
+}
+
+.advantages {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Базовый ряд: картинка слева, текст справа */
+.advantages__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; 
+    margin-bottom: 60px;
+}
+
+/* Модификатор для второго ряда: разворачивает колонки наоборот */
+.advantages__row--reverse {
+    flex-direction: row-reverse;
+}
+
+.advantages__row:last-child {
+    margin-bottom: 0;
+}
+
+/* Обе колонки занимают по 50% без учета gap */
+.advantages__col-img,
+.advantages__col-text {
+    flex: 0 1 50%;
+    width: 100%;
+}
+
+/* Стили текста */
+.advantages__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0d1c33;
+    
+    position: relative;
+    padding-bottom: 20px; 
+    margin-bottom: 25px;
+}
+
+.advantages__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px; 
+    height: 2px;        
+    background-color: #0d1c33;
+}
+
+.advantages__descr p {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.advantages__descr p:last-child {
+    margin-bottom: 0;
+}
+
+/* Адаптивная картинка с легкой тенью */
+.advantages__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Белая рамка */
+    border: 6px solid #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.cta-zone {
+    background-image: url('images/bg-girl.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0; 
+    margin-top: 100px;
+}
+
+/* Центрируем плашку внутри контейнера */
+.cta-zone__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Полупрозрачная темная плашка для текста */
+.cta-zone__box {
+    background-color: rgba(0, 0, 0, 0.4); /* Черный цвет с прозрачностью 60% */
+    max-width: 500px;
+    width: 100%;
+    padding: 10px 10px; 
+    text-align: center;
+    /* backdrop-filter: blur(5px); */
+}
+
+/* Стилизация текста */
+.cta-zone__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600; 
+    line-height: 1.5;
+    color: #ffffff;
+}
+.features {
+    background-color: #ffffff; 
+    padding: 80px 0;
+}
+
+/* Флекс-ряд для четырех колонок */
+.features__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Элементы выравниваются по верхней линии */
+    gap: 30px;
+}
+
+/* Отдельная колонка преимуществ */
+.features__item {
+    flex: 0 1 25%; /* Каждая колонка занимает 25% ширины ряда */
+    text-align: center; /* Центрируем весь текст и иконку внутри */
+    
+}
+
+.features__icon-wrapper {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.features__icon {
+    max-height: 100%; /* Ограничиваем картинку по высоте обертки */
+    width: auto;
+    display: block;
+}
+
+/* Стили заголовков преимуществ */
+.features__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d1c33;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+/* Стили описания */
+.features__text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.3;
+    /* color: #555555; */
+    
+}
+
+.footer {
+    background-color: #2c3a61; 
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+}
+
+/* Сетка для контактов и карты */
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Тонкая разделительная линия */
+}
+
+/* Колонка контактов */
+.footer__contacts {
+    flex: 0 1 40%;
+}
+
+.footer__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.footer__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__item a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer__item a:hover {
+    opacity: 0.8;
+}
+
+.footer__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /*центрируем иконку по вертикали */
+    
+    /* Задаем размеры под иконки */
+    width: 20px; 
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.footer__item--address::before {
+    background-image: url('images/map-marker.svg');
+}
+
+.footer__item--phone::before {
+    background-image: url('images/phone-fill.svg');
+}
+
+.footer__item--email::before {
+    background-image: url('images/icons_mail.svg');
+}
+
+
+/* Колонка с картой */
+.footer__map-wrapper {
+    flex: 0 1 55%;
+    width: 100%;
+}
+
+.footer__map {
+    width: 100%;
+    height: 150px; 
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+/* Нижняя строчка (копирайт) */
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); /* Чуть приглушенный белый цвет */
+}
+
+.footer__policy {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer__policy:hover {
+    color: #ffffff;
+}
+
+/* === АДАПТИВНАЯ ЧАСТЬ === */
+
+/* Планшеты: немного уменьшаем логотип, чтобы всё оставалось в один ряд */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 32px;
+        -webkit-text-stroke: 6px #2c3a61; /* Уменьшаем обводку пропорционально шрифту */
+    }
+}
+
+/* Мобильные телефоны: перестраиваем в колонку */
+@media (max-width: 480px) {
+    .header__inner {
+        flex-direction: column; /* Ставим логотип сверху, телефон снизу */
+        gap: 15px;              /* Отступ между ними */
+        text-align: center;
+    }
+    
+    .logo {
+        font-size: 28px;                  /* Компактный размер для мобилки */
+        -webkit-text-stroke: 5px #2c3a61; /* Еще немного тоньше обводка */
+        letter-spacing: 1px;
+    }
+    
+    .phone__link {
+        font-size: 15px; /* Чуть аккуратнее на маленьком экране */
+    }
+}
+
+@media (max-width: 992px) {
+    .main__title {
+        font-size: 32px; /* Чуть уменьшаем шрифт, чтобы он не был гигантским */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .main{
+        margin-bottom: 20px;
+    }
+    .main__row {
+        flex-direction: column; /* Перестраиваем в колонку: текст сверху, фото снизу */
+        text-align: center; /* Центрируем текст для мобильного интерфейса */
+    }
+
+    .main__title {
+        flex: 0 1 auto;
+        width: 100%;
+        font-size: 28px; /* Оптимальный размер для смартфонов */
+    }
+
+    .main__img {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: 450px; /* Чтобы на мобилке фото не становилось слишком огромным */
+    }
+}
+
+/* --- Мобильный адаптив (экран меньше 768px) --- */
+@media (max-width: 768px) {
+    .advantages__row,
+    .advantages__row--reverse {
+        /* Отменяем разворот и выстраиваем в один столбик */
+        flex-direction: column; 
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .advantages__col-img,
+    .advantages__col-text {
+        flex: 0 1 100%;
+    }
+    
+    .advantages__title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+/* --- Адаптив для мобильных устройств --- */
+@media (max-width: 768px) {
+    .cta-zone {
+        padding: 60px 0;
+        margin-top: 20px;
+    }
+    
+    .cta-zone__box {
+        padding: 25px 20px;
+    }
+    
+    .cta-zone__text {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+/* --- Адаптив для средних и маленьких экранов --- */
+
+/* Планшеты: перестраиваем сетку в 2х2 */
+@media (max-width: 992px) {
+    .features__row {
+        flex-wrap: wrap; /* Разрешаем перенос колонок на новую строку */
+        gap: 40px 30px;
+    }
+    
+    .features__item {
+        flex: 0 1 calc(50% - 15px); /* Занимают половину ширины экрана за вычетом зазора */
+    }
+}
+
+/* Смартфоны: всё падает в один столбец */
+@media (max-width: 576px) {
+    .features {
+        padding: 20px 0;
+    }
+
+    .features__row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .features__item {
+        flex: 0 1 100%;
+        max-width: 340px; /* Чтобы текст на мобилках не расплывался слишком широко */
+    }
+}
+
+/* --- Адаптив для мобилок --- */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 20px 0;
+    }
+
+    .footer__main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__contacts,
+    .footer__map-wrapper {
+        flex: 0 1 100%;
+        width: 100%;
+    }
+
+    .footer__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
